@@ -16,7 +16,7 @@ module ApplicationHelper
       when 'html'
         lang = :html
       when ''
-          lang = :md
+        lang = :md
       else
         lang = language
       end
@@ -29,7 +29,7 @@ def markdown(text)
     html_render = HTMLwithCoderay.new(
       filter_html: true,
       hard_wrap: true,
-      link_attributes: { rel: 'nofollow', targget: "_blank" }
+      link_attributes: { rel: 'nofollow', target: "_blank" }
     )
     options = {
         autolink: true,
